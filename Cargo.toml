@@ -1,0 +1,27 @@
+[package]
+name = "poly"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies.bytemuck]
+version = "1.16.1"
+features = ["aarch64_simd", "derive"]
+
+[dependencies.pollster]
+version = "0.3.0"
+features = ["macro"]
+
+[dependencies.glam]
+version = "0.28.0"
+features = ["bytemuck"]
+
+[dependencies.image]
+version = "0.25.1"
+default-features = false
+features = ["jpeg", "rayon"]
+
+[dependencies]
+log = "0.4.22"
+wgpu = "0.20.1"
+env_logger = "0.11.3"
+winit = "0.29.15"
